@@ -1,0 +1,44 @@
+package imcatividade1;
+
+/**
+ *
+ * @author Gustavo
+ */
+
+import java.util.Scanner;
+public class IMCATIVIDADE1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+    Scanner entrada = new Scanner (System.in);
+    
+    System.out.println("Qual é o seu nome?");
+    String nome = entrada.nextLine();
+    System.out.println("Seu nome é "+nome);
+    
+    System.out.println("Qual é a sua idade?");
+    int idade = entrada.nextInt();
+    System.out.printf("Você tem %d anos.\n", idade);
+    
+    System.out.println("Qual é o seu peso?");
+    double peso = entrada.nextDouble();
+    System.out.printf("Você pesa %.2f kg.\n", peso);
+    
+    System.out.println("Qual é a sua altura?");
+    double altura = entrada.nextDouble();
+    System.out.printf("Você tem %.2f de altura.\n", altura);
+    
+    /*
+    pra fazer a conta com as informações dadas pelo usuário, declarar uma nova
+    variável -double ou int, dependendo doq precisar-, e fazer a conta 
+    necessária
+    */
+    double imc = peso/(altura*altura);
+    System.out.printf("E seu IMC é: %.2f.\n", imc);
+    
+    }
+    
+}
